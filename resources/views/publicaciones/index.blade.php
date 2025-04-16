@@ -49,8 +49,6 @@
                         📄 Detalles
                     </a>
                     @if ($publicacion->id_usuario == Auth::id())
-
-
                     <a href="{{ route('publicaciones.edit', $publicacion->id_publicacion) }}" class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-md shadow transition duration-200">
                         🖋️ Editar
                     </a>
@@ -79,5 +77,5 @@
 @endsection
 
 @push('scripts')
-    @vite('resources/js/Duracion_mensaje.js')
+@vite('resources/js/Duracion_mensaje.js')
 @endpush
